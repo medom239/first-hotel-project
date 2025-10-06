@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <title>reservation in SweetHouse</title>
+    <meta charset="UTF-8">
+    <meta name="booking" content="booking">
+    <link rel="stylesheet" href="second.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+<div class="all">
+    <h1>Make a Reservation</h1>
+    <form action="">
+        <div class="personal_info">
+            <label >  your name*
+                <input placeholder="enter your name" required autocomplete="off" autofocus>
+            </label>
+            <label >  your number*
+                <input type="tel" placeholder="enter your phone number" required minlength="11" maxlength="11" pattern="[0-9]{11}">
+            </label>
+            <label >  your email*
+                <input type="email" placeholder="enter your email.com" required>
+            </label>
+            <label >  your nationality*
+                <input list="nationality" name="country" autocomplete="off" placeholder="where are you from" required>
+                <datalist id="nationality">
+                <option value="England">england</option>
+                <option value="America">america</option>
+                <option value="egypt">Egypt</option>
+                <option value="saudi">Saudi Arabia</option>
+                <option value="uae">United Arab Emirates</option>
+                <option value="qatar">Qatar</option>
+                <option value="kuwait">Kuwait</option>
+                <option value="oman">Oman</option>
+                <option value="jordan">Jordan</option>
+                <option value="lebanon">Lebanon</option>
+                <option value="turkey">Turkey</option>
+                <option value="morocco">Morocco</option>
+                <option value="algeria">Algeria</option>
+                <option value="tunisia">Tunisia</option>
+                <option value="sudan">Sudan</option>
+                <option value="iraq">Iraq</option>
+                <option value="yemen">Yemen</option>
+                <option value="palestine">Palestine</option>
+                <option value="syria">Syria</option>
+                <option value="france">France</option>
+                <option value="italy">Italy</option>
+                <option value="uk">United Kingdom</option>
+                </datalist>
+            </label>
+
+        </div>
+        <div class="booking_details">
+            <label >check in*
+                <input type="date" required>
+            </label>
+            <label >check out*
+                <input type="date" required>
+            </label>
+            <div class="numberofguest">
+                <label>number of adults*
+                    <input type="number" min="1" required>
+                </label>
+                <label>number of childs*
+                    <input type="number"min="0" required>
+                </label>
+            </div>
+            <label>number of rooms*
+                <input type="number" min="1" required>
+            </label>
+
+
+        </div>
+        <div class="rooms_sorts">
+            
+        <div class="swiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide first_slide" >
+        <img src="https://tse2.mm.bing.net/th/id/OIP.CEf2GTDBEA58MMSPNoyupgHaE6?cb=12&w=800&h=530&rs=1&pid=ImgDetMain&o=7&rm=3">
+        <div class="info">
+            <h3>single room</h3>
+            <p>120$ / night</p>
+            <label >
+                <input type="radio" name="select" required>select
+            </label>
+
+        </div>
+        
+    </div>
+    <div class="swiper-slide second_slide">
+        <img src="https://hoteljmfour.com/wp-content/uploads/2021/06/1689175610505-scaled-e1689937491660.jpg">
+        <div class="info">
+            <h3>double room</h3>
+            <p>240$ / night</p>
+            <label >
+                <input type="radio" name="select" required>select
+            </label>
+
+        </div>
+    </div>
+    
+    <div class="swiper-slide third_slide">
+        <img src="https://medinahotels.co/hotel-images-p/medina/h-700324251/emaar-royal-hotel-al-madina-image-5.jpg">
+        <div class="info">
+            <h3>suite</h3>
+            <p>400$ / night</p>
+            <label >
+                <input type="radio" name="select" required>select
+            </label>
+
+        </div>
+    </div>
+    
+    
+
+  </div>
+  <div class="swiper-pagination"></div>
+
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  
+</div>
+
+        </div>
+
+        <input type="submit" value="book">
+        
+    </form>
+
+    <!-- Popup بتاع الـ Book -->
+<div id="bookPopup" class="popup">
+  <div class="popup-content">
+    <span class="close">&times;</span>
+    <div class="icon">✔</div>
+    <p>Your booking is complete!</p>
+  </div>
+</div>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="tsfor.js"></script>
+</body>
+
+</html>

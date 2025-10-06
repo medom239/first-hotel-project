@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <title>booking in SweetHouse</title>
+    <meta charset="UTF-8">
+    <meta name="booking" content="booking">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Borel&family=Diplomata&family=Yesteryear&display=swap" rel="stylesheet">
+<!--اللينك بتاع فونت اوسيم-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!--ال تحت ده كود  swiper js-->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo" id="logo">
+           <span>Sw</span>eet<span>Ho</span>use
+        </div>
+
+    </header>
+    <div class="main_bar">
+        <button onclick="location.href='#logo'">home</button>
+        <button onclick="location.href='#fetures'">fetures</button>
+        <button onclick="location.href='#galary'">galary</button>
+        <button class="reserv_btn" onclick="location.href='training.html'">Reservation</button>
+        <button onclick="location.href='#questions'">questions</button>
+        <button onclick="location.href='#reviews'">reviews</button>
+        <button onclick="location.href='#contact'">contact</button>
+    </div>
+    <section class="main_section" >
+        <div class="big_photo">
+            <P class="photo_text">Live an experience<br> you've never had before</P>
+         </div>
+<!--
+        <div class="first_slide">
+            <img src="hotel photos/room hotel(1).jpg">
+            <p>luxurios rooms</p>
+            <button class="check">check availability</button>
+        </div>
+        <div class="second_slide">
+            <img src="hotel photos/big hotel hall.webp">
+            <p>luxurios halls</p>
+            <button class="check">check availability</button>
+        </div>
+        <div class="third_slide">
+            <img src="hotel photos/food.webp">
+            <p>food and drinks</p>
+            <button class="check">check availability</button>
+        </div> -->
+
+
+
+        <div class="swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide first_slide" id="fetures">
+        <img src="hotel photos/room hotel(1).jpg">
+        <div class="text_btn"> 
+            <p>luxurios rooms</p>
+            <button class="check">check availability</button>
+        </div>
+    </div>
+    <div class="swiper-slide second_slide">
+        <img src="hotel photos/big hotel hall.webp">
+        <div class="text_btn">
+            <p>luxurios halls</p>
+            <button class="check">check availability</button>
+        </div>
+    </div>
+    
+    <div class="swiper-slide third_slide">
+        <img src="hotel photos/food.webp">
+        <div class="text_btn">
+            <p>food and drinks</p>
+                <button class="check">check availability</button>
+        </div>
+    </div>
+    
+    
+
+  </div>
+  <div class="swiper-pagination"></div>
+
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  
+</div>
+<!------------------------------------->
+<div class="additional_fetures" >
+    <div class="first_feture ">
+        <img src="https://media.istockphoto.com/id/660936908/photo/smiling-waitress-writing-on-clipboard.jpg?s=612x612&w=0&k=20&c=EpkuCYQzdDMmxfWlBRsU0-qF_Dmun5eV9kch_JNYrkI=">
+        <div class="text">
+            <h3>Best staff</h3>
+            <p>we have the best staff ,always ready to welcome you with a smile.  
+        Our team is highly trained to make sure your stay is comfortable,  
+        and to provide you with everything you need at any time. </p>
+        </div>
+    </div>
+        <div class="second_feture ">
+            <div class="text">
+                <h3>Swimming pool </h3>
+                <p>Enjoy our large outdoor swimming pool designed for both relaxation and fun.  
+Whether you want to take a refreshing morning swim or simply relax by the poolside,  
+we provide a clean, safe, and comfortable environment for every one</p>
+            </div>
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/389276112627655.601840c8ba6d2.jpg">
+         </div>
+
+        <div class="third_feture">
+            <img src="https://img.freepik.com/premium-photo/concept-art-illustration-apartment-living-room-interior-new-york-city_960782-42072.jpg">
+            <div class="text">
+                <h3>Modern facilities</h3>
+                <p>Our hotel is equipped with modern facilities to make your stay more convenient and enjoyable.  
+From high-speed Wi-Fi and smart room controls to a fully equipped fitness center,  
+we ensure that you experience both comfort and the latest technology during your visit.</p>
+            </div>
+        </div>
+        <div class="fourth_feture">
+            <div class="text">
+                <h3> Fitness center</h3>
+                <p>Stay active during your stay with our fully equipped fitness center.  
+From cardio machines to weight training equipment,  
+we provide everything you need to maintain your workout routine.</p>
+            </div>
+            <img src="https://cdn1.jinxidao.com/group1/M00/4B/B8/ooYBAF9kbF6AVYHiABrSXjSMlEo230.jpg">
+        </div>
+        <div class="fifth_feture">
+            <img src="https://therebelchick.com/wp-content/uploads/2023/03/pexels-cottonbro-studio-6466284-1-1000x1500.webp">
+            <div class="text">
+                <h3>24/7 Room service</h3>
+                <p>Experience convenience at any time with our 24/7 room service.  
+Whether you want a late-night snack or an early breakfast,  
+our staff is always ready to serve you right in your room.</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!--second swiper-->
+<div class="mySwiper">
+    <p id="galary">additional photos:</p>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" >
+        <img src="hotel photos/room hotel 2.avif" />
+      </div>
+      <div class="swiper-slide">
+        <img src="hotel photos/big hotel.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="hotel photos/indoor pool.webp" />
+      </div>
+      <div class="swiper-slide">
+        <img src="hotel photos/pancakes-2291908_1280.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="hotel photos/new hall.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="hotel photos/BDQZV-P0094-Check-in-Front-Desk.16x9.webp" />
+      </div>
+      <div class="swiper-slide">
+        <img src="hotel photos/pnw__1358937653_restaurant2.jpg" />
+      </div>
+      
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <div class="questions" id="questions">
+    
+      <details>
+          <summary>Why should you choose us?</summary>
+          <p>
+     1. Best staff always ready to welcome you with a smile.<br>
+      2.Large swimming pool for relaxation and fun.<br>
+      3.Modern facilities with high-speed Wi-Fi and smart controls.<br>
+      4.Luxury restaurant serving delicious international dishes.<br>
+      5.Relaxing spa with massages and therapies.<br>
+      6.Fully equipped fitness center to stay active.<br>
+      7.24/7 room service for your convenience.<br>
+          
+        </p>
+      </details>
+  
+      <details>
+        <summary>Is there any vacancy?</summary>
+        <p> bress <q>check availability</q> button or go to the <a href="training.html">Reservation</a> section</p>
+      </details>
+    
+    
+      <details>
+        <summary>What are the payment methods?</summary>
+        <p>
+      1.Cash at the reception<br>
+      2.Credit & Debit Cards (Visa, MasterCard, Amex)<br>
+      3.Online payment via PayPal<br>
+      4.Bank transfer on request<br>
+    </p>
+      </details>
+  
+      <details>
+        <summary>What are the age requirments?</summary>
+        <p>
+      1.Guests must be at least 18 years old to book a room.<br>
+      2.Children under 12 years old can stay for free with their parents.<br>
+      3.Extra bed charges may apply for guests above 12 years old.<br>
+      4.A valid ID or passport is required at check-in.<br>
+        </p>
+      </details>
+
+  </div >
+  <!--reviews section-->
+  <div class="reviews" id="reviews">
+
+    <div class=" last_Swiper">
+
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <img src="https://voyagedenver.com/wp-content/uploads/sites/6/2019/06/personal_photo-161.jpg">
+        <h3>James Johnson</h3>
+        <p>The hotel was amazing! Staff were super friendly and the rooms were spotless.</p>
+      </div>
+
+      <div class="swiper-slide"> 
+        <img src="https://th.bing.com/th/id/R.056dd79d31e8b4a87246d2271a809ebf?rik=abS3MwOi83A%2bFA&riu=http%3a%2f%2fceeuropeb2015.goputney.com%2ffiles%2f2015%2f05%2fMcCarthyJonathan_BRI1761_web.jpg&ehk=juoO5wUKPAacDmQFn43i5Mcbub%2be0EkENPShiztykFw%3d&risl=&pid=ImgRaw&r=0">
+        <h3>Jonathan McCarthy</h3>
+        <p>I loved the conference halls. Perfect place for business meetings and events.</p>
+      </div>
+
+      <div class="swiper-slide"> 
+        <img src="https://m.cbhomes.com/a/204/270866/AXICYmzngtzQ/original.jpg">
+        <h3>Michael Brown</h3>
+        <p>Great service and delicious food. I would definitely come back with my family.</p>
+      </div>
+
+      <div class="swiper-slide"> 
+        <img src="https://images.pexels.com/photos/789822/pexels-photo-789822.jpeg?cs=srgb&dl=pexels-olly-789822.jpg&fm=jpg">
+        <h3>Sophia Martinez</h3>
+        <p>The spa was incredibly relaxing, exactly what I needed during my vacation.</p>
+      </div>
+
+      <div class="swiper-slide"> 
+        <img src="https://c8.alamy.com/comp/EF3N0W/shot-of-an-attractive-young-woman-ready-for-her-running-session-fitness-EF3N0W.jpg">
+        <h3>Olivia Wilson</h3>
+        <p>Amazing gym with modern equipment. I enjoyed my morning workouts here!</p>
+      </div>
+
+      <div class="swiper-slide"> 
+        <img src="https://www.socaltech.com/images/story/clintbrauer.jpg">
+        <h3>David Thompson</h3>
+        <p>Fast check-in and check-out process. The staff was very professional.</p>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="https://images.pexels.com/photos/6499489/pexels-photo-6499489.jpeg?cs=srgb&dl=pexels-thirdman-6499489.jpg&fm=jpg">
+        <h3>Emily Anderson</h3>
+        <p>Comfortable rooms and 24/7 room service was a huge plus. Highly recommend.</p>
+      </div>
+
+      <div class="swiper-slide"> 
+        <img src="https://getsolo.lk/wp-content/uploads/2023/07/For-entertainment-2.jpg">
+        <h3>Isabella Clark</h3>
+        <p>I really enjoyed the entertainment nights at the hotel. So much fun!</p>
+      </div>
+
+      <div class="swiper-slide"> 
+        <img src="https://thumbs.dreamstime.com/b/online-fitness-coaching-personal-trainer-conducting-virtual-session-client-leading-391524276.jpg?w=768">
+        <h3>Daniel Lee</h3>
+        <p>Excellent hospitality and great atmosphere. Will definitely visit again.</p>
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+
+  </div>
+
+
+  </div>
+  
+    </section>
+<footer class="contact_section" id="contact">
+  <div class="fotter_grid">
+    <div>
+      <h3 class="fuckyou">Contact us</h3>
+      <a href="0405828585" target="_blank"><i class="fa-solid fa-phone"></i> 0405828585</a>
+      <a href="01158884984" target="_blank"><i class="fa-solid fa-mobile"> </i> +1158884984</a>
+      <a href="mohammed@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> SweetHouse@gmail.com</a>
+      <a href="https://www.google.com/maps/place/London,+UK/@52.3630086,-2.399316,7z/data=!4m6!3m5!1s0x47d8a00baf21de75:0x52963a5addd52a99!8m2!3d51.5072178!4d-0.1275862!16zL20vMDRqcGw?entry=ttu&g_ep=EgoyMDI1MDkzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank"><i class="fa-solid fa-location-dot"></i> london ,England -400104</a>
+    </div>
+    <div>
+      <h3 class="fuckyou">Follow us on social media</h3>
+      <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i> facebook</a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i> instagram</a>
+      <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i> twitter</a>
+      <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i> linkedin</a>
+    </div>
+    <div>
+      <h3 class="fuckyou">Important sections</h3>
+      <a href="training.html">Reserve now</a>
+      <a href="#logo">home</a>
+      <a href="#galary">gallary</a>
+      <a href="#fetures">check rooms</a>
+      <a href="#questions">questions</a>
+    </div>
+    <p class="copyright">&copy; copyright by SweetHouse | all rights reseved!</p>
+
+
+  </div>
+</footer>
+
+<!-- Popup -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="close">&times;</span>
+    <div class="icon">✔</div>
+    <p>There are available places.</p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" ></script>                        <!-- <=== لينك ال swiper js-->
+
+<script src="main.js">
+
+</script>
+
+</body>
+</html>

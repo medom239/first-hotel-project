@@ -1,0 +1,518 @@
+html,body{
+  margin:0;
+  padding:0;
+  /* overflow-x: hidden; */
+}
+body{
+  background-color: #37353E;
+}
+
+/* .header{
+  background-color: black;
+} */
+ :root{
+  --gold:rgb(251, 177, 86);
+  --blackgreen:#37353E;
+ }
+
+.logo{
+  font-family: "Borel", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color:white;
+  font-size: 36px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+span{
+  color:rgb(240, 240, 108);
+}
+
+.main_bar {
+  position: sticky;
+  top:0;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(251, 177, 86);
+  width:max-content;
+  margin: 0 auto;
+  padding:5px;
+  gap:10px;
+  z-index: 1000;
+}
+.reserv_btn{
+  font-size: 33px !important;
+  width:auto !important;
+  font-family: serif;
+  background-color: rgb(249, 249, 121) !important;
+  color:rgb(94, 26, 26);
+}
+.reserv_btn:hover {
+  background-color: rgb(118, 60, 60) !important;
+  /* color: #e63946 !important; */
+  transform: scale(1.05); 
+  
+  
+}
+
+.main_bar button {
+  background-color: rgb(251, 177, 86);
+  border:none;
+  font-size: 28px;
+  cursor: pointer;
+  width:210px;
+  transition: all 0.2s ease-in-out;
+  padding:4px;
+  
+}
+.main_bar button:hover{
+  background-color: #37353E;
+  color:rgb(251, 177, 86);
+}
+.big_photo{
+  background-image: url("hotel photos/E44A0656-p-1080.jpg");
+  height: 610px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+  
+}
+.photo_text{
+  position:absolute;
+  top:37%;
+  left:3%;
+  font-size: 40px;
+  background-color:#37353E ;
+  padding:10px;
+  color:rgb(251, 177, 86);
+}
+.first_slide,
+.third_slide,
+.second_slide {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.first_slide img,
+.third_slide img,
+.second_slide img{
+  
+  width:55%;
+  margin-top:180px;
+  height: 60vh;
+}
+.first_slide p,
+.third_slide p,
+.second_slide p{
+  color:white;
+  font-size: 30px;
+  
+}
+.first_slide button,
+.third_slide button,
+.second_slide button{
+  font-size: 20px;
+  background-color: rgb(251, 177, 86);
+  border-radius: 25px;
+  cursor:pointer;
+  padding:10px;
+  transition:all 0.3s ease-in-out;
+}
+/* .first_slide button:hover
+,.second_slide button:hover,
+.third_slide button:hover{
+  background-color: #37353E;
+  color:rgb(251, 177, 86);
+  
+  } */
+  
+  
+  /* .swiper{
+    display: block;
+    margin-top:4%;
+    }*/.swiper {
+      width: 90%;          /* خليه ياخد عرض أكبر */
+      max-width: 1200px;   /* حد أقصى */
+      margin: 100px auto;
+    }
+    
+    .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* justify-content: center; */
+      text-align: center;
+    }
+    .text_btn{
+      display:flex;
+      flex-direction: row;
+      gap:500px;
+      margin-bottom: 20px;
+      
+      justify-content: center;
+    }
+    
+    .swiper-slide img {
+      width: 90%;          /* خليه أعرض شوية */
+      max-width: 900px;    /* يكبر بس بحد معين */
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6); /* ظل خفيف يخليها أوضح */
+      margin-bottom: 20px;
+    }
+    
+    .swiper-slide p {
+      font-size: 28px;
+      color: white;
+      margin: 10px 0;
+    }
+    
+    .swiper-slide button {
+      font-size: 18px;
+      padding: 10px 20px;
+      border-radius: 25px;
+    }
+    .swiper-slide button:hover {
+      background-color: #37353E;
+      color:rgb(251, 177, 86);
+    }
+    .additional_fetures {
+      display:flex;
+      flex-direction: column;
+      gap:170px;
+    }
+    
+    .first_feture,.third_feture,.fifth_feture{
+      display:flex;
+      gap:15%;
+      align-items: center;
+    }
+    .first_feture img,.third_feture img,.fifth_feture img{
+      margin-left: 10%;
+      width:408px;
+      height: 612px;
+    }
+    .first_feture .text,.third_feture div,.fifth_feture div{
+      font-size: 30px;
+      color:var(--gold);
+      line-height: 1.4;
+      text-align: center;
+    }
+    
+    .second_feture,.fourth_feture{
+      display:flex;
+      gap:15%;
+      align-items: center;
+    }
+    .second_feture img,.fourth_feture img{
+      width:408px;
+      height: 612px;
+      margin-right:10%;
+    }
+    .second_feture div, .fourth_feture div{
+      font-size: 30px;
+      color:var(--gold);
+      line-height: 1.4;
+      text-align: center;
+    }
+    
+    
+    .mySwiper{
+      display:block;
+      margin-top: 200px;
+      overflow-x: hidden;
+    }
+    .mySwiper p{
+      font-size: 30px;
+      color:white;
+      
+    }
+    
+    .questions{
+      margin-top:120px;
+      display: flex;
+      flex-direction: column;
+      gap:60px;
+      margin-left:3%;
+    }
+    
+    
+    
+    details summary{
+      background-color: var(--gold);
+      color:var(--blackgreen);
+      width:35%;
+      font-size: 25px;
+      border-style: solid;
+      border-color: black;
+      border-width: 3px;
+      border-radius: 10px;
+      padding:10px;
+      cursor:pointer;
+      transition: all 0.3s;
+    }
+    details p {
+      color:var(--gold);
+      background-color:var(--blackgreen);
+      font-size:25px;
+      border-style: solid;
+      border-color:var(--gold);
+      border-width: 1px;
+      border-top:none;
+      margin-top:0px;
+      padding:10px 10px 10px 10px;
+      width:35%;
+      line-height: 1.4;
+      
+    }
+    details p a{
+      color:rgb(137, 137, 255);
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    details p a:hover{
+      text-decoration: underline;
+    }
+    
+    .reviews{
+      margin:250px 20px 20px 20px;
+      overflow-x: hidden;
+    }
+    .last_Swiper .swiper-wrapper img{
+      height: 150px;
+      width:150px;
+      border-radius: 50%;
+      cursor:default;
+    }
+    .last_Swiper .swiper-wrapper p{
+      color:var(--gold);
+      font-size: 25px;
+    }
+    .last_Swiper .swiper-wrapper h3{
+      color:var(--gold);
+      font-size: 28px;
+      
+    }
+    
+    .contact_section {
+      background-color: black;
+      width: 100%;
+      margin: 0;
+      
+    }
+    
+    .fotter_grid{
+      /* background-color: black; */
+      display:grid;
+      grid-template-columns: auto auto auto;
+      font-size: 25px;
+      margin:150px 0 0 0;
+      color:var(--gold);
+      padding:10px;
+    }
+    .fotter_grid div{
+      display: flex;
+      flex-direction: column;
+      gap:40px;
+    }
+    .fotter_grid div a{
+      color:var(--gold);
+      font-size: 27px;
+      text-decoration: none;
+    }
+    .fotter_grid div a:hover{
+      text-decoration: underline;
+      color:rgb(137, 137, 255);
+    }
+    
+    .copyright{
+      background-color: var(--gold);
+      color:var(--blackgreen);
+      padding:10px;
+      border-radius: 20px;
+      font-size: 30px;
+      text-align: center;
+      width:160%;
+    }
+    
+    /*اقسم الميديا كويري*/
+    
+    @media (max-width:1272px){
+      .main_bar{
+        width:auto;
+      }
+      
+    }
+    @media (max-width:992px){
+      .main_bar{
+        padding:2px;
+      }
+      .main_bar button{
+        font-size: 22px;
+      }
+      .reserv_btn{
+        font-size: 25px !important;
+      }
+      
+      .big_photo{
+        width:992px;
+        background-size: contain;
+      }
+      .photo_text{
+        font-size: 33px;
+      }
+      
+      
+    }
+
+
+    /* الخلفية الشفافة */
+.popup {
+  display: none; /* مخفي في البداية */
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+/* الصندوق */
+.popup-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 300px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+/* زرار الإغلاق */
+.close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+/* الأيقونة */
+.icon {
+  font-size: 48px;
+  color: green;
+  margin-bottom: 15px;
+}
+
+.popup-content p {
+  font-size: 20px;
+  color: #333;
+}
+
+
+    
+    @media (max-width:768px){
+      .photo_text{
+        font-size: 28px;
+      }
+      
+      .first_slide img,
+      .third_slide img,
+      .second_slide img{
+        
+        width:80%;
+        margin-top:150px;
+        height: 44vh;
+      }
+      .first_slide button,
+      .third_slide button,
+      .second_slide button{
+        font-size: 15px;
+        border-radius: 20px;
+        padding:10px;
+        
+      }
+      
+      .text_btn{
+        gap:250px;
+        margin-bottom: 20px;
+        
+      }
+      .swiper-slide p {
+        font-size: 23px;
+      }
+      
+      .first_feture .text,.third_feture div,.fifth_feture div{
+        font-size: 22px;
+        line-height: 1.2;
+      }
+      
+      .first_feture img,.third_feture img,.fifth_feture img{
+        margin-left: 6%;
+        width:308px;
+        height: 412px;
+      }
+      
+      .second_feture img,.fourth_feture img{
+        width:308px;
+        height: 412px;
+        margin-right:6%;
+      }
+      
+      .second_feture div, .fourth_feture div{
+        font-size: 22px;
+        line-height: 1.2;
+      }
+      
+      .mySwiper p{
+        font-size: 25px;
+        color:white;
+        
+      }
+      
+      .questions{
+        margin-top:120px;
+        display: flex;
+        flex-direction: column;
+        gap:40px;
+        margin-left:3%;
+      }
+      
+      details summary{
+        width:65%;
+        font-size: 20px;
+        
+        border-width: 2px;
+        border-radius: 10px;
+        padding:7px;
+        
+      }
+      details p {
+        font-size:20px;
+        border-width: 1px;
+        border-top:none;
+        margin-top:0px;
+        padding:10px 10px 10px 10px;
+        width:64%;
+        line-height: 1.4;
+        
+      }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    ::selection{
+      background-color: black;
+  color:white;
+}
